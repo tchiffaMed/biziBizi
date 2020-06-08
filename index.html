@@ -33,7 +33,7 @@
 
 </head>
 <body>
-    <header class="" style="background-image: url(i/scra.jpg);background-size: cover; height: 700px;">
+    <header class="" style="background-image: url(i/scra.jpg);background-size: cover; height: 900px;">
         <div class="navbar-fixed">
            <nav class="transparent">
 
@@ -246,17 +246,12 @@
     
     <script type="text/javascript">
 
-    $( document ).ready(function(){
-    $(window).scroll(function(){
-
-        if($(window).scrollTop()>300){
-            $('nav').addClass('black');
-        }
-        els{
-            $('nav').removeClass('black');
-        }
-    });
-  });
+    var nav=document.getElementById('nav');
+        window.onscroll=function() {
+            if(window.pageYOffset>100{
+               nav.style.background= "#007bff";}
+               else{nav.style.background= "transparent";}
+                                    
   </script>
 
 </body>
