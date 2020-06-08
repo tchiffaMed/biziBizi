@@ -29,10 +29,26 @@
   })
   </script>
 
+
+<script type="text/javascript">
+    $( document ).ready(function(){
+    $(window).scroll(function(){
+
+        if($(window).scrollTop()>300){
+            $('nav').addClass('black');
+        }
+        els{
+            $('nav').removeClass('black');
+        }
+    });
+  });
+  </script>
+
 </head>
 <body>
     <header class="" style="background-image: url(i/scra.jpg);width:p ; height: 100vh;  background-repeat: no-repeat;">
-        <nav class="transparent">
+        <div class="navbar-fixed">
+           <nav class="transparent">
 
         <div class="container">
         
@@ -48,7 +64,9 @@
           </ul>
           
         </div>
-      </nav>
+      </nav> 
+        </div>
+        
 
       <ul id="navsi" class="sidenav" >
          
@@ -204,7 +222,7 @@
 
         <footer class="page-footer grey">
 <div class="container">
-                <div class="row" >
+                <div class="row" style="padding-bottom: 20px; margin-bottom: 0px;"  >
                     <div class="col s12 m8">
                         <h5>Location</h5>
                         <p>BiziBizi, INC</p>
@@ -223,7 +241,7 @@
             </div>
             
         </footer>
-        <footer class="page-footer black" style="position: absolute; margin-bottom: 0px; width:100%;pad"  >
+        <footer class="page-footer black" style="position: absolute; margin-bottom: 0px; width:100%;">
             <div class="container">
                             <div class="row" >
                                 <div class="col s12 m9">
@@ -232,7 +250,7 @@
                                     
                                 </div>
                                 <div class="col s12 m3">
-                                  <a href="" class="white-text"><i class="material-icons left">expand_less</i>Back To Top</a>
+                                  <a href="" class="white-text right"><i class="material-icons left">expand_less</i>Back To Top</a>
                                 </div>
                             </div>
                         </div>
